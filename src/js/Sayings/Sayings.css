@@ -1,0 +1,42 @@
+.Sayings {
+	text-align: left;
+	
+	
+}
+.Sayings-entry {
+	display: flex;
+	width: 100%;
+	margin: 10px 80px 10px 0;
+	position: relative;
+	
+}/*
+.Sayings-entry.is-odd .Sayings-entryMain:before {
+	content: '';
+	position: absolute;
+    top: 4px;
+    right: -15px;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-left: 15px solid rgb(220,220,220);
+    bottom: auto;
+    left: auto;
+}
+*/
+.Sayings-entry.is-odd {
+	margin: 10px 0px 10px 80px;
+	
+}
+.Sayings-entryLeft {
+	flex: 0 0 80px;
+}
+.Sayings-entryMain {
+    flex: 1;
+    border: 1px solid gray;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+.Sayings-entry.is-odd .Sayings-entryMain{
+	background: rgb(220,220,220);
+}
